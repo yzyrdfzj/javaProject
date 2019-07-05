@@ -16,18 +16,18 @@ public class deleFolder {
      *            要删除的文件名
      * @return 删除成功返回true，否则返回false
      */
-//    public static boolean delete(String fileName) {
-//        File file = new File(fileName);
-//        if (!file.exists()) {
-//            System.out.println("删除文件失败:" + fileName + "不存在！");
-//            return false;
-//        } else {
-//            if (file.isFile())
-//                return deleteFile(fileName);
-//            else
-//                return deleteDirectory(fileName);
-//        }
-//    }
+    public static boolean delete(String fileName) {
+        File file = new File(fileName);
+        if (!file.exists()) {
+            System.out.println("删除文件失败:" + fileName + "不存在！");
+            return false;
+        } else {
+            if (file.isFile())
+                return deleteFile(fileName);
+            else
+                return deleteDirectory(fileName);
+        }
+    }
 
     /**
      * 删除单个文件
