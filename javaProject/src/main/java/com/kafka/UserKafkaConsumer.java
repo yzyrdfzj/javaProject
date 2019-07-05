@@ -22,7 +22,7 @@ public class UserKafkaConsumer extends Thread {
             properties.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
             properties.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
  
-			KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<>(properties);
+			KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<String, String>(properties);
             kafkaConsumer.subscribe(Arrays.asList("videoDeviceOnline"));
             while (true) {
             	//取出消息
