@@ -32,7 +32,7 @@ public class App
     	
     	
     	// json串(以自己的为准)
-    	/*String str = "[{id:58},{id:25},{name:\"张山\"}]";
+    	String str = "[{id:58},{id:25},{name:\"张山\"}]";
     	String st = "{\"0\":{\"codeId\":\"一\",\"codeName\":\"任务一\"},\"1\":{\"codeId\":\"二\",\"codeName\":\"任务二\"}}";
     	JSONArray js = new JSONArray();
     	js.add("50");
@@ -41,8 +41,8 @@ public class App
     	jo.put("name", "loi");
     	js.add(jo);
     	
-//    	System.out.println("jsonObj: "+jo);
-//    	System.out.println("jsonArr: "+js);
+    	System.out.println("jsonObj: "+jo);
+    	System.out.println("jsonArr: "+js);
     	
     	//str转JSONArray 并取出所有的键与值
     		JSONArray jsonArr = JSONArray.parseArray(str);
@@ -68,7 +68,7 @@ public class App
     		    //打印出jsonObject中的子元素
     			System.out.println("key="+key);
     		    System.out.println("value="+jsonObject.getJSONObject(key));
-    		}*/
+    		}
     			
 
 
