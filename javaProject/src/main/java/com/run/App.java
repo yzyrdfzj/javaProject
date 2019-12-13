@@ -15,9 +15,12 @@ public class App
 //		ra2.run();
 		
 //		ra.cc();
-		new Thread(ra2).start();
-		new Thread(ra).start();
 //		new Thread(ra.r1).start(); 
 //		new Thread(ra.r2).start();
+		
+		new Thread(ra2).start();
+		new Thread(ra).start();
+		
+		
     }
 }
