@@ -1,0 +1,16 @@
+https://blog.csdn.net/Java_HuiLong/article/details/86144055 
+
+1. 查看push记录
+git log  或 git log --pretty=oneline 输出简洁信息  
+或 git reflog    HEAD就代表当前 {n}, 0 表示当前分支，1代表上一次提交 ,以此类推
+
+2. 回退代码
+git reset --hard 版本号    git reset --soft 版本号
+前者-soft 表示只是改变了HEAD的指向，本地代码不会回退发生变化，使用git status命令可以看到，同时也可以git commit提交。
+后者-hard直接会改变本地源码，不仅仅指向变化了，代码也会回退到第2次commit push后的状态，所以使用时要格外细心，必要时可以先 stash 当前代码，后面可以恢复unstash再次使用。
+
+3.重新push
+正常push可能会失败 因为当前分支的版本低于远程分支的版本，所以要想覆盖掉它，可以使用force
+git push origin 分支名 --force
+
+  
